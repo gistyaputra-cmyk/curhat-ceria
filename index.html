@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Curhat Ceria 🐰💖</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== LOGIN PAGE ===== -->
+<div class="login-page" id="loginPage">
+    <div class="login-box">
+        <h2>🐰 Curhat Ceria</h2>
+        <p>Tempat aman buat kamu curhat 💌</p>
+        <input type="text" id="username" placeholder="Nama kamu ✨">
+        <input type="password" id="password" placeholder="Password 🔒">
+        <button onclick="login()">Masuk 💖</button>
+        <div class="error" id="errorMsg"></div>
+    </div>
+</div>
+
+<!-- ===== DASHBOARD ===== -->
+<div class="dashboard" id="dashboardPage">
+    <div class="header">
+        <h1>🌈 Form Psikolog Remaja</h1>
+        <button class="logout" onclick="logout()">Logout 🚪</button>
+    </div>
+
+    <div class="form-box">
+        <h2>💬 Ceritakan Perasaanmu</h2>
+
+        <div class="form-group">
+            <label>😢 Apa yang sedang kamu rasakan?</label>
+            <select id="perasaan">
+                <option>Sedih 😔</option>
+                <option>Capek 😩</option>
+                <option>Kesepian 🥺</option>
+                <option>Marah 😡</option>
+                <option>Bingung 🤔</option>
+                <option>Senang 😄</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>📝 Cerita singkat tentang masalahmu</label>
+            <textarea id="cerita" rows="4" placeholder="Ketik ceritamu di sini ya..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>🌟 Apa yang kamu harapkan?</label>
+            <textarea id="harapan" rows="3" placeholder="Misalnya: ingin didengarkan, ingin saran, dll"></textarea>
+        </div>
+
+        <button class="submit-btn" onclick="kirim()">Kirim Cerita 💌</button>
+        <div class="success" id="successMsg"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
